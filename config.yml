@@ -1,0 +1,99 @@
+# Galaxy Profile README Configuration — prdlk
+#
+# Usage:
+#   cp config.yml <profile-repo>/config.yml
+#   python -m generator.main
+#
+# Note: the schema supports exactly 3 galaxy arms (one per accent color),
+# so the six focus areas are paired into three arms below.
+
+# Your GitHub username (required)
+username: prdlk
+
+# Profile information displayed in the galaxy header
+profile:
+  name: "Prad Nukala"
+  tagline: "Engineer & Founder building decentralized identity infrastructure"
+  company: "Sonr Inc."
+  location: "New York, NY"
+  bio: |
+    Shipping software since age 12 — three apps with 1M+ downloads and
+    bylines in Fast Company. W3C working-group member (DIDs, WebAuthn,
+    WebAssembly) and DIF contributor (UCAN, DWN). Building user-owned
+    identity that feels like an iPhone and complies like a bank.
+  philosophy: '"Testem Perhibio"'
+
+# Social links displayed at the bottom of the profile
+social:
+  email: "i@prad.nu"
+  linkedin: "pradn"
+  website: "pradnukala.com"
+
+# Galaxy arms represent your core focus areas
+# Skills sourced from pradnukala.com/skills, sorted under the closest arm
+galaxy_arms:
+  - name: "Frontend"
+    color: "dendrite_violet"
+    items:
+      - "TypeScript"
+      - "React.js"
+      - "React Native"
+      - "Flutter"
+      - "Swift"
+      - "Dart"
+  - name: "Backend"
+    color: "synapse_cyan"
+    items:
+      - "Go"
+      - "Python"
+      - "Protocol Buffers"
+      - "WebAuthn"
+      - "WebAssembly"
+      - "Cryptography"
+  - name: "DevOps"
+    color: "axon_amber"
+    items:
+      - "Docker"
+      - "Kubernetes"
+      - "Terraform"
+      - "Ansible"
+      - "CI/CD"
+      - "Linux"
+
+# Featured projects shown as constellation stars
+#   arm: 0 = Frontend & Mobile, 1 = Backend & DevOps, 2 = AI & Crypto
+projects:
+  - repo: "sonr-io/sonr"
+    arm: 2
+    description: "Decentralized identity protocol on Base — passkeys, DIDs, and ERC-4337 smart wallets."
+
+# Theme color overrides (deep space defaults)
+theme:
+  void: "#080c14"
+  nebula: "#0f1623"
+  star_dust: "#1a2332"
+  synapse_cyan: "#00d4ff"
+  dendrite_violet: "#a78bfa"
+  axon_amber: "#ffb020"
+  text_bright: "#f1f5f9"
+  text_dim: "#94a3b8"
+  text_faint: "#64748b"
+
+# Stats configuration — which metrics to show on the telemetry card
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+# Language display settings
+languages:
+  exclude:
+    - "HTML"
+    - "CSS"
+    - "Shell"
+    - "Makefile"
+    - "Nix"
+  max_display: 8
